@@ -36,16 +36,14 @@ function process(num){
 
   if(answer < num){
     doc.write('.message', '숫자를 낮춰주세요');
-    return;
   } else if(answer > num) {
     doc.write('.message', '숫자를 높여주세요');
-    return;
   } else if(answer == num) {
     doc.write('.message', '정답입니다!');
     reset();
   }
 
-  if(setting.now_attempts == 0){
+  if(setting.now_attempts <= 0){
     doc.write('.message', '정답은 ' + String(answer) + '입니다..');
     reset();
     return;
