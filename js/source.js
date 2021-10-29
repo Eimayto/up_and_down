@@ -41,6 +41,7 @@ function process(num){
   } else if(answer == num) {
     doc.write('.message', '정답입니다!');
     reset();
+    return;
   }
 
   if(setting.now_attempts <= 0){
