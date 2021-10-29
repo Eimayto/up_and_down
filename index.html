@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Up and Down</title>
+    <script src="./js/source.js"> </script>
+    <link rel="stylesheet" href="./css/style.css"></link>
+  </head>
+  <body>
+    <h1>Up and Down</h1>
+    <div id='grid'>
+      <ul>
+        <input type='button' onclick='gameStart()' value='게임 시작'>
+        <input type='button' onclick='showDiscription()' value='게임 설명'>
+      </ul>
+      <div id="board">
+
+
+        <div class="game" style="display:block;">
+          <div class="range" style="color:gray;font-size:15px;">
+            <script>document.write(setting.min, '~', setting.max)</script>
+          </div>
+          <div class='board'>
+            <input type='number' class='inputNum'>
+            <input type='button' value='확인' onclick='submit()'><br>
+            <div class='counting'>
+              <script>
+                document.write(String(setting.now_attempts + '회 남았습니다'));
+              </script>
+            </div>
+          </div>
+          <div class='message'>
+          </div>
+        </div>
+
+
+        <div class="instruction" style="display:none;">
+          범위 내에서 난수로 지정된 숫자를 예측을 통해 맞추는 가벼운 게임입니다. 플레이어는 컴퓨터가 주는 힌트를 통해 정답을 추론해낼 수 있습니다.
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

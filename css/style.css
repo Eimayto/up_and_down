@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+  margin:0;
+  padding:25px;
+  border-bottom:2px solid black;
+}
+
+ul{
+  border-right:2px solid black;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:35px;
+}
+ul input{
+  margin-bottom:5px;
+}
+
+.game .board{
+  padding:10px;
+  padding-left: 15px;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#board{
+  margin:10px;
+}
